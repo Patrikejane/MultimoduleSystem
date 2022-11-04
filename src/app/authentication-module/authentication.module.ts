@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HelpComponent } from './help/help.component';
+import {routing} from "./authentication.routing";
+import {MatCardModule} from "@angular/material/card";
+import {FormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
 
 
 
@@ -13,7 +17,7 @@ import { HelpComponent } from './help/help.component';
     HelpComponent
   ],
   imports: [
-    CommonModule
+    CommonModule, routing, MatCardModule, FormsModule, MatInputModule
   ],
   exports: [LoginComponent, RegisterComponent, HelpComponent],
 })
